@@ -42,10 +42,7 @@ h1{
 }
 
 
-#logo img{
-  width: 30%;
-  height: 30%;
-}
+
 
 #side-bar{
   display:grid;
@@ -53,6 +50,7 @@ h1{
 
   background-color: rgb(177, 130, 220);
   row-gap: 1vw;
+  z-index: 10;
 }
 
 #nav{
@@ -67,32 +65,46 @@ h1{
   align-items: flex-start;
 }
 
+
 #header{
   height: 13vw;
   display:grid;
-  margin-left: 1vw;
+  padding-left: 1vw;
+  margin-bottom: 1vw;
+  box-shadow: 0px 0.01vw 0.5vw  rgb(206, 206, 206);
+  
 }
 
 #header-upper{
   display:grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0.3fr;
   
+}
+
+#header-down{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
 }
 
 #header-search{
-  margin-top: 2vw;
+  margin-top: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  align-items: center;
 }
 
 input{
-  width: 30vw;
-  border-radius: 0.5vw;
-  height: 1.3vw;
+  width: 45vw;
+  border-radius: 0.8vw;
+  height: 1.7vw;
   border-width: 0.08vw;
-  
+
+  background-color: rgb(206, 179, 255);
+  border-width: 0;
 }
+
 #search-button{
   width: 1vw;
-  margin-top: 1vw;
 }
 
 #notification{
@@ -103,20 +115,57 @@ input{
   width: 4vw;
   border-radius: 2vw;
 }
-
+#user-name{
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 1vw;
+}
+#user-name p{
+  margin-top: -1vw;
+}
 #header-notification{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1vw;
+  margin-right: 2vw;
 }
 
 .header-notification-icons{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  font-size: larger;
 }
 
 #header-down-left{
   display: grid;
   grid-template-columns: 0.1fr 1fr;
+  align-items: center;
+  column-gap: 3vw;
+}
 
+#header-down-right{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.button-header{
+  background-color: blueviolet;
+  width: 7vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border-width: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Responsive layout with Clamp Method*/
+p,
+input{
+  font-size: clamp(0.5vw, 1.5vw, 5vw);
+  font-family: roboto;
 }
