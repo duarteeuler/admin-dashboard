@@ -1,3 +1,122 @@
 body{
   margin: 0;
 }
+
+h1{
+  font-family: 'VT323', monospace;
+}
+
+#hero{
+  display: grid;
+  grid-template-columns: 0.27fr 1fr;
+  height: 60vw;
+}
+
+#main-content{
+  background-color: beige;
+  border-width: 2px;
+  border-color: black;
+
+  display:grid;
+  grid-template-columns:  1fr 0.4fr;
+}
+
+#projects{
+  background-color: aqua;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2;
+  gap: 5px;
+  height: 47vw;
+}
+.proj{
+  background-color: bisque;
+}
+
+
+#right-bar{
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 3vw;
+}
+
+
+#logo img{
+  width: 30%;
+  height: 30%;
+}
+
+#side-bar{
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-color: rgb(177, 130, 220);
+  row-gap: 1vw;
+}
+
+#nav{
+  display:grid;
+  grid-template-rows: 6;
+  row-gap: 1vw;
+}
+
+#config{
+  display:grid;
+  grid-template-rows: 3;
+  align-items: flex-start;
+}
+
+#header{
+  height: 13vw;
+  display:grid;
+  margin-left: 1vw;
+}
+
+#header-upper{
+  display:grid;
+  grid-template-columns: 1fr 0.5fr;
+  
+}
+
+#header-search{
+  margin-top: 2vw;
+}
+
+input{
+  width: 30vw;
+  border-radius: 0.5vw;
+  height: 1.3vw;
+  border-width: 0.08vw;
+  
+}
+#search-button{
+  width: 1vw;
+  margin-top: 1vw;
+}
+
+#notification{
+  width: 1vw;
+}
+
+.avatar{
+  width: 4vw;
+  border-radius: 2vw;
+}
+
+#header-notification{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-notification-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-down-left{
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+
+}
