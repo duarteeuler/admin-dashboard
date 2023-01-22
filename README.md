@@ -3,7 +3,7 @@
 
 
 ## Built With
-  It was build usin HTML and CSS (Grid)
+  It was build using HTML and CSS (Grid)
 
 ## About
   The project have vw (viewport width) and vh (viewport height) units in CSS for responsive design, as well the function "clamp()"
